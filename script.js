@@ -1,2 +1,2 @@
-const button=document.getElementById('geo');const status=document.getElementById('geo-status');const text=document.getElementById('availability-text');
-button.addEventListener('click',()=>{if(!navigator.geolocation){status.textContent="La géolocalisation n’est pas disponible sur cet appareil.";return}status.textContent="Vérification de ta zone…";navigator.geolocation.getCurrentPosition(()=>{status.textContent="Zone détectée sur ton appareil. La position exacte n’est ni envoyée ni enregistrée.";text.textContent="Ta zone a été détectée localement. Pour connaître le lieu et la disponibilité exacte, contacte-nous sur Snapchat.";},()=>{status.textContent="Position non autorisée. Tu peux quand même nous contacter sur Snapchat.";},{enableHighAccuracy:false,timeout:8000,maximumAge:300000})});
+// No browser geolocation is requested here.
+// The location feature described on the page refers to the AirPods/Apple Find My ecosystem.
